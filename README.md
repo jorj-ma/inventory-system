@@ -14,29 +14,37 @@ A Python-based Command Line Interface (CLI) for managing inventory, interacting 
 - Running backend API at: `http://127.0.0.1:5000/inventory`
 
 ## Installation
-<bash
+```bash
 cd inventory_system
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-/>
-
+```
 ## USAGE
 The CLI is executed through the app/cli.py file.
-## Autheintication
+### Autheintication
 
-# List all items
+#### List all items
+```bash
 python3 app/cli.py list
+```
 
-# Add a new item
+#### Add a new item
+```bash
 python3 app/cli.py add --name "Orange Juice" --brand "Tropicana" --price 4.50 --stock 12 --barcode 555555555555
+```
 
-# Update an item (by ID)
+#### Update an item (by ID)
+```bash
 python3 app/cli.py update 1 --stock 20 --price 4.99
+```
 
-# View a specific item
+#### View a specific item
+```bash
 python3 app/cli.py view 1
+```
 
-# Delete an item
+#### Delete an item
+```bash
 python3 app/cli.py delete 1
-
+```
