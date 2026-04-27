@@ -14,12 +14,12 @@ A Python-based Command Line Interface (CLI) for managing inventory, interacting 
 - Running backend API at: `http://127.0.0.1:5000/inventory`
 
 ## Installation
-```bash
+<bash
 cd inventory_system
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-
+/>
 
 ## USAGE
 The CLI is executed through the app/cli.py file.
