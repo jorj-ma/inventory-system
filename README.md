@@ -12,54 +12,38 @@ A Python-based Command Line Interface (CLI) for managing inventory, interacting 
 - Python 3.x
 - Pip (Python package manager)
 - Running backend API at: `http://127.0.0.1:5000/inventory`
+  start the server by running `python3 run.py`
+  open another terminal to run the following commands
 
 ## Installation
-```bash
-cd inventory_system
-```
-```bash
-python3 -m venv venv
-```
-```bash
-source venv/bin/activate
-```
-```bash
-pip install -r requirements.txt
-```
+`cd inventory_system`
+
+`python3 -m venv venv`
+
+`source venv/bin/activate`
+
+`pip install -r requirements.txt`
+
 ## USAGE
 The CLI is executed through the app/cli.py file.
 ### Authentication
-```bash
-python3 app/cli.py register --username YourName --password YourPassword --role admin
-```
-```bash
-python3 app/cli.py login --username YourName --password YourPassword
-```
-```bash
-python3 app/cli.py logout
-```
+`python3 app/cli.py register --username YourName --password YourPassword --role admin`
+
+`python3 app/cli.py login --username YourName --password YourPassword`
+
+`python3 app/cli.py logout`
 
 #### List all items
-```bash
-python3 app/cli.py list
-```
+`python3 app/cli.py list`
 
 #### Add a new item
-```bash
-python3 app/cli.py add --name "Orange Juice" --brand "Tropicana" --price 4.50 --stock 12 --barcode 555555555555
-```
+`python3 app/cli.py add --name "Orange Juice" --brand "Tropicana" --price 4.50 --stock 12 --barcode 555555555555`
 
 #### Update an item (by ID)
-```bash
-python3 app/cli.py update 1 --stock 20 --price 4.99
-```
+`python3 app/cli.py update 1 --stock 20 --price 4.99`
 
 #### View a specific item
-```bash
-python3 app/cli.py view 1
-```
+`python3 app/cli.py view 1`
 
 #### Delete an item
-```bash
-python3 app/cli.py delete 1
-```
+`python3 app/cli.py delete 1`
