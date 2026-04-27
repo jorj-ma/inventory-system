@@ -28,7 +28,16 @@ pip install -r requirements.txt
 ```
 ## USAGE
 The CLI is executed through the app/cli.py file.
-### Autheintication
+### Authentication
+```bash
+python3 app/cli.py register --username YourName --password YourPassword --role admin
+```
+```bash
+python3 app/cli.py login --username YourName --password YourPassword
+```
+```bash
+python3 app/cli.py logout
+```
 
 #### List all items
 ```bash
