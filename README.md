@@ -16,8 +16,14 @@ A Python-based Command Line Interface (CLI) for managing inventory, interacting 
 ## Installation
 ```bash
 cd inventory_system
+```
+```bash
 python3 -m venv venv
+```
+```bash
 source venv/bin/activate
+```
+```bash
 pip install -r requirements.txt
 ```
 ## USAGE
