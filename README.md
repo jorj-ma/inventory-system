@@ -16,34 +16,72 @@ A Python-based Command Line Interface (CLI) for managing inventory, interacting 
   open another terminal to run the following commands
 
 ## Installation
-`cd inventory_system`
+```
+cd inventory_system
+```
 
-`python3 -m venv venv`
+```
+python3 -m venv venv
+```
 
-`source venv/bin/activate`
+```
+source venv/bin/activate
+```
 
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
 
-## USAGE
-The CLI is executed through the app/cli.py file.
+##   Running the application
+  start the server by running 
+  ```
+  python3 run.py
+  ```
+  open another terminal to run the following commands
+
 ### Authentication
-`python3 app/cli.py register --username YourName --password YourPassword --role admin`
+```
+python3 app/cli.py register --username YourName --password YourPassword --role admin
+```
 
-`python3 app/cli.py login --username YourName --password YourPassword`
+```
+python3 app/cli.py login --username YourName --password YourPassword
+```
 
-`python3 app/cli.py logout`
+```
+python3 app/cli.py logout
+```
 
 #### List all items
-`python3 app/cli.py list`
+```
+python3 app/cli.py list
+```
 
 #### Add a new item
-`python3 app/cli.py add --name "Orange Juice" --brand "Tropicana" --price 4.50 --stock 12 --barcode 555555555555`
+```
+python3 app/cli.py add --name "Orange Juice" --brand "Tropicana" --price 4.50 --stock 12 --barcode 555555555555
+```
 
 #### Update an item (by ID)
-`python3 app/cli.py update 1 --stock 20 --price 4.99`
+```
+python3 app/cli.py update 1 --stock 20 --price 4.99
+```
 
 #### View a specific item
-`python3 app/cli.py view 1`
+```
+python3 app/cli.py view 1
+```
 
 #### Delete an item
-`python3 app/cli.py delete 1`
+```
+python3 app/cli.py delete 1
+```
+
+## Author
+- Anzigale George
+
+## Contributions
+Contributions are welcome. Open an issue with  a clear description of the proposed improvements.
+
+## License
+The code is open for use.
