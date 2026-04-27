@@ -11,9 +11,6 @@ A Python-based Command Line Interface (CLI) for managing inventory, interacting 
 ## Requirements
 - Python 3.x
 - Pip (Python package manager)
-- Running backend API at: `http://127.0.0.1:5000/inventory`
-  start the server by running `python3 run.py`
-  open another terminal to run the following commands
 
 ## Installation
 ```
